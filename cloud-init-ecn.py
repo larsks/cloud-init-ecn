@@ -9,6 +9,7 @@ def parse_args():
     p = argparse.ArgumentParser()
     p.add_argument('--cloud-config', '-f',
             default='/var/lib/cloud/instance/cloud-config.txt')
+    p.add_argument('hostname', nargs='?')
     return p.parse_args()
 
 def main():
